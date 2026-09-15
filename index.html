@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPad</title>
+    <script src="https://kit.fontawesome.com/13180ef18e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+
+
+    <div id="main-textarea">
+        <header> <img class="image" src="https://texteditor.co/images/texteditor.png" alt="texteditor">
+            <h1> devPad</h1>
+        </header>
+
+
+        <div id="top">
+            <button class="btn" title="Bold" onclick="textholder('bold')"> b</button>
+
+
+            <button class="btn" title="Italic" onclick="textholder('italic')"> i</button>
+            <button class="btn" title="Underline" onclick="textholder('underline')"> u </button>
+            <button class="btn" title="Capitalize" onclick="textholder('capitalize')"> C </button>
+            <button class="btn" title="Lowercase" onclick="textholder('lowercase')"> l</button>
+            <button class="btn" title="Uppercase" onclick="textholder('uppercase')"> Up </button>
+            <button class="btn" title="Background" onclick="textholder('background')"> Up </button>
+
+
+            <button class="btn" title="left" onclick="textholder('justify')"><span
+                    class="fa-solid fa-align-justify"></span></button>
+
+
+            <button class="btn" title="Center" onclick="textholder('center')"> <span
+                    class="fa-solid fa-align-center"></span></button>
+            <button class="btn" title="Right" onclick="textholder('right')"> <span
+                    class="fa-solid fa-align-right"></span></button>
+
+            <button class="btn" title="text increase" onclick="textholder('increase')"> + </button>
+            <button class="btn" title="text decrease" onclick="textholder('decrease')"> - </button>
+            <button class="btn" title="Reset All" onclick="textholder('reset')"> reset </button>
+
+
+            <input type="color" id="color" oninput="textholder('color')">
+            <form>
+                <select id="font-size" onclick="textholder('fontsize')" class="select-btn">
+                    <option value="fontszie" selected disabled>Fs</option>
+                    <option value="16px">16px</option>
+                    <option value="18px">18px</option>
+                    <option value="20px">20px</option>
+                    <option value="22px">22px</option>
+                    <option value="24px">24px</option>
+
+                </select>
+                <select id="font-family" onclick="textholder('fontfamily')" class="select-btn">
+                    <option value="fonts" selected disabled>ff</option>
+                    <option value="cursive">cursive</option>
+                    <option value="serif">serif</option>
+                    <option value="monospace">monospace</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="system-ui">system-ui</option>
+
+
+                </select>
+                <select id="background-color" onclick="textholder('background')" class="select-btn">
+                    <option value="bg-color" selected disabled >bg</option>
+                    <option value="#ffffff">White</option>
+                    <option value="#f5f5dc">Beige</option>
+                    <option value="#fdf6e3">Cream</option>
+                    <option value="#e8f4f8">Light Blue</option>
+                    <option value="#f0fff0">Mint Green</option>
+                    <option value="#fff0f5">Light Pink</option>
+                    <option value="#2b2b2b">Dark Gray</option>
+                    <option value="#1e1e1e">Charcoal</option>
+                    <option value="#000000">Black</option>
+                    <option value="#fffacd">Soft Yellow</option>
+
+                </select>
+            </form>
+
+
+        </div>
+
+
+
+
+        <textarea name="text" id="textarea" cols="70" rows="12" maxlength="70" minlength="8"
+            placeholder=" write you words  to make then stylish....."></textarea>
+        <footer class="foot">
+            &copy; <span style="font-size: 12px;  ">developed by Ghulam mohiuddin memon </span>
+        </footer>
+    </div>
+
+
+
+    <!--     
+    <button  class="btn" onclick="textholder()">submit</button>  -->
+
+
+
+
+
+
+
+    <!-- * oninput — value change hote hi       Purpose: User input ko immediately detect karna.      Socho colour picker:   <input type="color" oninput="textholder('color')"> -->
+    <!-- * Benefit ---- Jahan aapko live/instant update chahiye, oninput useful hai -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>

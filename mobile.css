@@ -1,0 +1,32 @@
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    #top .btn {
+
+        margin: 9px;
+    }
+
+    #top {
+
+        gap: 3px;
+        padding: 13px;
+
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    form {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    #top {
+
+        gap: 6px;
+
+        padding: 5px;
+
+    }
+
+
+}
