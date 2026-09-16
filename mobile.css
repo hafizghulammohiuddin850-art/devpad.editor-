@@ -11,6 +11,21 @@
         padding: 12px;
 
     }
+        form {
+          
+            width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 0px;
+        }
+           
+                .select-btn {
+
+                        margin: 3px;
+                }
+                                 #top .btn {
+                                     margin: 3px;
+                                 }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
@@ -20,7 +35,7 @@
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        gap: 5px;
+        gap: 0px;
     }
 
     #top {
